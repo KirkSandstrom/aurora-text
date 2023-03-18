@@ -1,0 +1,61 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* /import fonts */
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main-content {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.heading--size-small {
+  font-size: 1rem;
+}
+
+.heading--size-large {
+  font-size: 4rem;
+}
+
+/* gradient text + animation */
+.aurora-text {
+  background-size: 400% 400%;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg, blue, rebeccapurple, red);
+  background-image: linear-gradient(90deg, blue, rebeccapurple, red);
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: auroraGradient;
+}
+
+@keyframes auroraGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+/* /gradient text + animation */
